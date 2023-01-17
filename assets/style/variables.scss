@@ -1,0 +1,23 @@
+$color1: #2C3639;
+$color2: #3F4E4F;
+$color3: #966844;
+$color4: #C2C8C6;
+$color5: #DCD7C9;
+$color6: #F6F5F1;
+
+$status-colors: (
+        primary: #000,
+        success: #27BA6C,
+        info: #03a9f4,
+        warning: #FF8833,
+        danger: #ff1a1a,
+);
+
+@mixin create-status-color {
+
+  @each $status, $color in $status-colors {
+    &-#{$status} {
+      color: $color;
+    }
+  }
+}
