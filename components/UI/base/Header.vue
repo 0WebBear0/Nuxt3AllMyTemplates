@@ -1,10 +1,11 @@
 <template>
 		<header class="header">
-				<NuxtLink :to="localePath('/')" class="header__logo">WebChtivo</NuxtLink>
-				<NuxtLink :to="localePath('title')" class="header__link">{{$t('titles')}}</NuxtLink>
-				<NuxtLink :to="localePath('hero')" class="header__link">{{$t('heroes')}}</NuxtLink>
-				<NuxtLink :to="localePath('playlist')" class="header__link">{{$t('playlist')}}</NuxtLink>
-				<NuxtLink :to="localePath('profile')" class="header__user-img"><IconAvatar/></NuxtLink>
+				<NuxtLink :to="('/')" class="header__logo">WebBear</NuxtLink>
+				<NuxtLink :to="('svg-test')" class="header__link">{{$t('svgTest')}}</NuxtLink>
+				<NuxtLink :to="('filters')" class="header__link">{{$t('filters')}}</NuxtLink>
+				<NuxtLink :to="('blueprint')" class="header__link">{{$t('blueprint')}}</NuxtLink>
+				<NuxtLink :to="('animation')" class="header__link">{{$t('animation')}}</NuxtLink>
+				<NuxtLink :to="('statistics')" class="header__user-img"><IconAvatar/></NuxtLink>
 		</header>
 </template>
 

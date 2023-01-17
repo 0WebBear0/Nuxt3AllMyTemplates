@@ -1,34 +1,10 @@
 /* eslint-disable */
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import en from "./locales/en.json"
-import ru from "./locales/ru.json"
-
 export default defineNuxtConfig({
     ssr: true,
     imports: {
       autoImport: true
-    },
-    modules: [
-        '@nuxtjs/i18n',
-    ],
-    i18n: {
-        detectBrowserLanguage: {
-            alwaysRedirect: true,
-            useCookie: true,
-            cookieKey: 'i18n_redirected',
-            redirectOn: 'root',
-        },
-        locales: ['en', 'ru'],
-        vueI18n: {
-            globalInjection: true,
-            legacy: false,
-            fallbackLocale: 'ru',
-            messages: {
-                en: en,
-                ru: ru,
-            }
-        }
     },
     typescript: {
         strict: true
@@ -39,7 +15,13 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+    // build: {
+    //     transpile: ['vuetify'],
+    // },
     vite: {
+        // define: {
+        //     'process.env.DEBUG': false,
+        // },
         css: {
             preprocessorOptions: {
                 scss: {
@@ -49,6 +31,8 @@ export default defineNuxtConfig({
         },
     },
     css: [
-      `~/assets/style/main.scss`
+        // 'vuetify/lib/styles/main.sass',
+        // '@mdi/font/css/materialdesignicons.min.css',
+        `~/assets/style/main.scss`
     ],
 })

@@ -1,5 +1,6 @@
 {
-  "titles": "Titles",
-  "heroes": "Heroes",
-  "playlist": "My Titles"
+  "svgTest": "Svg",
+  "filters": "Filters",
+  "blueprint": "Blueprint",
+  "animation": "Animation"
 }

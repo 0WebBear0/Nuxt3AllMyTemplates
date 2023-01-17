@@ -1,6 +1,6 @@
 {
-  "titles": "Произведения",
-  "heroes": "Герои",
-  "playlist": "Мои тайтлы"
-
+  "svgTest": "Svg",
+  "filters": "Фильтры",
+  "blueprint": "Схемы",
+  "animation": "Анимации"
 }

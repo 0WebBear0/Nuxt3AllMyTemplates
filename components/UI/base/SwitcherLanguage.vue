@@ -1,7 +1,11 @@
 <template>
-		<NuxtLink :to="switchLocalePath('en')" style="color: #000">English</NuxtLink>
-		<br>
-		<NuxtLink :to="switchLocalePath('ru')" style="color: #000">Русский</NuxtLink>
+  <form>
+    +      <label for="locale-select">{{ $t('language') }}: </label>
+    +      <select id="locale-select" v-model="$i18n.locale">
+    +        <option value="en">en</option>
+    +        <option value="ru">ru</option>
+    +      </select>
+    +    </form>
 </template>
 
 <script setup lang="ts">
