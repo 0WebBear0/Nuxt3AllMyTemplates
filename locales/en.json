@@ -2,5 +2,6 @@
   "svgTest": "Svg",
   "filters": "Filters",
   "blueprint": "Blueprint",
-  "animation": "Animation"
+  "animation": "Animation",
+  "statistics": "Statistics"
 }

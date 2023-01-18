@@ -1,5 +1,5 @@
 <template>
-		<SwitcherLanguage/>
+		<SwitcherLanguage class="w-100 justify-center"/>
 		<div>
 				-2) nuxt-auth
 				-1) server

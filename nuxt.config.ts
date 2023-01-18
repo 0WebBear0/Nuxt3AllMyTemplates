@@ -15,13 +15,13 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    // build: {
-    //     transpile: ['vuetify'],
-    // },
+    build: {
+        transpile: ['vuetify'],
+    },
     vite: {
-        // define: {
-        //     'process.env.DEBUG': false,
-        // },
+        define: {
+            'process.env.DEBUG': false,
+        },
         css: {
             preprocessorOptions: {
                 scss: {
@@ -31,8 +31,8 @@ export default defineNuxtConfig({
         },
     },
     css: [
-        // 'vuetify/lib/styles/main.sass',
-        // '@mdi/font/css/materialdesignicons.min.css',
+        'vuetify/lib/styles/main.sass',
+        '@mdi/font/css/materialdesignicons.min.css',
         `~/assets/style/main.scss`
     ],
 })

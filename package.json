@@ -23,6 +23,8 @@
     "vue-i18n": "^9.2.2"
   },
   "dependencies": {
-    "nuxi": "^3.0.0"
+    "@mdi/font": "^7.1.96",
+    "nuxi": "^3.0.0",
+    "vuetify": "^3.1.1"
   }
 }
